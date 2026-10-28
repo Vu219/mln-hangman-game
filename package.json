@@ -1,0 +1,25 @@
+{
+  "name": "gia-treo-co-cua-tu-ban",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Giá Treo Cổ Của Tư Bản – game nhiều người chơi kiểu Kahoot (Firebase + React)",
+  "scripts": {
+    "install:all": "npm install && npm --prefix frontend install",
+    "emulators": "firebase emulators:start --only auth,database --project demo-giatreoco",
+    "test:rules": "firebase emulators:exec --only database --project demo-giatreoco \"vitest run --config vitest.rules.config.ts\"",
+    "test:game": "npm --prefix frontend test",
+    "test": "npm run test:game && npm run test:rules",
+    "seed:host": "node scripts/seed-host.mjs",
+    "bots": "node scripts/bots.mjs",
+    "e2e": "npm --prefix frontend run e2e",
+    "e2e:ci": "firebase emulators:exec --only auth,database --project demo-giatreoco \"npm --prefix frontend run e2e\"",
+    "set-admins": "firebase database:update /admins firebase/admins.json"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^3.0.4",
+    "firebase": "^10.14.1",
+    "firebase-tools": "^15.34.1",
+    "typescript": "~5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

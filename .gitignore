@@ -1,0 +1,12 @@
+node_modules/
+lib/
+dist/
+*.log
+.firebase/
+.env
+.env.local
+.env.*.local
+.vercel
+
+# Danh sách UID host thật – chỉ commit file mẫu admins.example.json
+firebase/admins.json

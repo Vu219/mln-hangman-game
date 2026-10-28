@@ -1,0 +1,464 @@
+{
+  "title": "Từ độc quyền dầu mỏ đến độc quyền dữ liệu",
+  "rounds": [
+    {
+      "round": 1,
+      "title": "Cơ sở lý luận về độc quyền",
+      "subtitle": "Lênin và chủ nghĩa tư bản độc quyền",
+      "theme": "classic",
+      "bailoutQuestions": [
+        {
+          "id": "b1-bieu-hien",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Đâu là một biểu hiện chủ yếu của chủ nghĩa tư bản độc quyền nhà nước?",
+          "options": [
+            "Sự kết hợp về nhân sự giữa tổ chức độc quyền và nhà nước",
+            "Nhà nước xoá bỏ hoàn toàn sở hữu tư nhân",
+            "Nhà nước rút khỏi mọi hoạt động kinh tế",
+            "Cạnh tranh giữa các doanh nghiệp chấm dứt"
+          ],
+          "answerIndex": 0,
+          "explanation": "Ba biểu hiện chủ yếu của CNTB độc quyền nhà nước: kết hợp về nhân sự giữa tổ chức độc quyền và nhà nước; hình thành và phát triển sở hữu nhà nước; độc quyền nhà nước trở thành công cụ để nhà nước điều tiết kinh tế."
+        },
+        {
+          "id": "b1-so-huu-nha-nuoc",
+          "type": "TRUE_FALSE",
+          "prompt": "Sở hữu nhà nước trong CNTB độc quyền nhà nước có thể được hình thành bằng cách xây dựng doanh nghiệp bằng vốn ngân sách và quốc hữu hoá các xí nghiệp tư nhân bằng cách mua lại.",
+          "answer": true,
+          "explanation": "Đúng. Sở hữu nhà nước hình thành qua: xây dựng doanh nghiệp nhà nước bằng vốn ngân sách, quốc hữu hoá xí nghiệp tư nhân bằng cách mua lại, nhà nước mua cổ phần của doanh nghiệp tư nhân… – nhưng vẫn phục vụ lợi ích của các tổ chức độc quyền."
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "title": "Độc quyền dầu mỏ",
+      "subtitle": "Standard Oil, Đạo luật Sherman và OPEC",
+      "theme": "oil",
+      "bailoutQuestions": [
+        {
+          "id": "b2-tarp",
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Tháng 10/2008, Quốc hội Mỹ thông qua chương trình nào để mua lại tài sản “xấu” và bơm vốn cứu các ngân hàng?",
+          "options": [
+            "Kế hoạch Marshall",
+            "Chính sách kinh tế mới (New Deal)",
+            "TARP – Chương trình giải cứu tài sản xấu",
+            "Hiệp ước Bretton Woods"
+          ],
+          "answerIndex": 2,
+          "explanation": "TARP (Troubled Asset Relief Program) ra đời theo Đạo luật Ổn định kinh tế khẩn cấp 2008: nhà nước dùng tiền thuế để cứu các ngân hàng “quá lớn để sụp đổ” – lãi thì tư nhân hưởng, lỗ thì xã hội gánh."
+        },
+        {
+          "id": "b2-700-ty",
+          "type": "FILL_BLANK",
+          "prompt": "Khi được thông qua năm 2008, chương trình TARP cho phép Bộ Tài chính Mỹ sử dụng tới ___ tỷ USD để giải cứu hệ thống tài chính.",
+          "timeLimitSec": 20,
+          "blanks": [
+            [
+              "700",
+              "bảy trăm"
+            ]
+          ],
+          "explanation": "700 tỷ USD (sau đó được hạ xuống 475 tỷ USD). Gói cứu trợ cho thấy vai trò “cứu nguy cho CNTB” của nhà nước tư sản khi khủng hoảng bùng nổ."
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "title": "Độc quyền dữ liệu",
+      "subtitle": "Big Tech và chủ nghĩa tư bản giám sát",
+      "theme": "network",
+      "bailoutQuestions": [
+        {
+          "id": "b3-khung-hoang-2008",
+          "type": "ORDERING",
+          "prompt": "Sắp xếp diễn biến cuộc khủng hoảng tài chính 2008 theo đúng trình tự (sớm nhất lên trên)",
+          "timeLimitSec": 30,
+          "items": [
+            "Bong bóng nhà đất Mỹ vỡ, các khoản vay thế chấp dưới chuẩn mất khả năng trả",
+            "Ngân hàng Lehman Brothers phá sản",
+            "Quốc hội Mỹ thông qua gói cứu trợ TARP",
+            "Cục Dự trữ Liên bang Mỹ hạ lãi suất về gần 0%"
+          ],
+          "explanation": "2006–2007 bong bóng nhà đất vỡ → 15/9/2008 Lehman Brothers phá sản → 3/10/2008 TARP được thông qua → 16/12/2008 Fed hạ lãi suất về 0–0,25%. Nhà nước can thiệp ở mọi khâu để cứu hệ thống."
+        },
+        {
+          "id": "b3-cong-cu-dieu-tiet",
+          "type": "MATCHING",
+          "prompt": "Nối công cụ can thiệp của nhà nước tư sản hiện đại với ví dụ tương ứng",
+          "timeLimitSec": 30,
+          "pairs": [
+            {
+              "left": "Chính sách tiền tệ",
+              "right": "Ngân hàng trung ương hạ lãi suất, bơm tiền ra thị trường"
+            },
+            {
+              "left": "Chính sách tài khoá",
+              "right": "Tăng chi tiêu ngân sách, giảm thuế để kích cầu"
+            },
+            {
+              "left": "Gói cứu trợ",
+              "right": "Bơm vốn cho tập đoàn “quá lớn để sụp đổ”"
+            },
+            {
+              "left": "Luật chống độc quyền",
+              "right": "Kiện, chia tách tập đoàn thống trị thị trường"
+            }
+          ],
+          "explanation": "Nhà nước tư sản hiện đại điều tiết kinh tế bằng nhiều công cụ, nhưng đều nhằm duy trì sự ổn định của chính quan hệ sản xuất TBCN – cứu trợ chỉ trì hoãn, không xoá bỏ mâu thuẫn."
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "title": "Giới hạn lịch sử của CNTB hiện đại",
+      "subtitle": "Mâu thuẫn cơ bản và xu hướng vận động",
+      "theme": "classic"
+    }
+  ],
+  "questions": [
+    {
+      "id": "r1-tap-trung-san-xuat",
+      "round": 1,
+      "type": "MULTIPLE_CHOICE",
+      "prompt": "Theo V.I. Lênin, tự do cạnh tranh đẻ ra điều gì, và khi điều đó phát triển tới một mức độ nhất định thì dẫn tới độc quyền?",
+      "timeLimitSec": 20,
+      "options": [
+        "Tập trung sản xuất",
+        "Khủng hoảng thừa",
+        "Xuất khẩu hàng hoá",
+        "Nhà nước phúc lợi"
+      ],
+      "answerIndex": 0,
+      "explanation": "Lênin: “tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, khi phát triển tới một mức độ nhất định, lại dẫn tới độc quyền”."
+    },
+    {
+      "id": "r1-hinh-thuc-to-chuc",
+      "round": 1,
+      "type": "MATCHING",
+      "prompt": "Nối mỗi hình thức tổ chức độc quyền với đặc trưng của nó",
+      "timeLimitSec": 45,
+      "pairs": [
+        {
+          "left": "Cácten (Cartel)",
+          "right": "Thoả thuận giá cả, sản lượng, thị trường; vẫn độc lập sản xuất và lưu thông"
+        },
+        {
+          "left": "Xanhđica (Syndicate)",
+          "right": "Thống nhất khâu lưu thông (mua nguyên liệu, bán sản phẩm)"
+        },
+        {
+          "left": "Tờrớt (Trust)",
+          "right": "Thống nhất cả sản xuất và lưu thông dưới một ban quản trị"
+        },
+        {
+          "left": "Côngxoócxiom (Consortium)",
+          "right": "Liên kết đa ngành giữa các tờrớt, xanhđica, ngân hàng…"
+        }
+      ],
+      "explanation": "Các hình thức tổ chức độc quyền phát triển từ thấp đến cao: cácten → xanhđica → tờrớt → côngxoócxiom; mức độ liên kết và tập trung ngày càng chặt chẽ."
+    },
+    {
+      "id": "r1-nam-dac-diem",
+      "round": 1,
+      "type": "MULTIPLE_CHOICE",
+      "prompt": "Đâu KHÔNG phải là một trong năm đặc điểm kinh tế cơ bản của chủ nghĩa tư bản độc quyền theo Lênin?",
+      "timeLimitSec": 25,
+      "options": [
+        "Xuất khẩu tư bản",
+        "Tư bản tài chính và bọn đầu sỏ tài chính",
+        "Xuất khẩu hàng hoá là chủ yếu",
+        "Sự phân chia thế giới về kinh tế giữa các liên minh độc quyền"
+      ],
+      "answerIndex": 2,
+      "explanation": "Năm đặc điểm: (1) tập trung sản xuất và các tổ chức độc quyền; (2) tư bản tài chính và đầu sỏ tài chính; (3) xuất khẩu tư bản; (4) phân chia thế giới về kinh tế giữa các liên minh độc quyền; (5) phân chia thế giới về lãnh thổ giữa các cường quốc. Xuất khẩu hàng hoá là đặc trưng của CNTB tự do cạnh tranh."
+    },
+    {
+      "id": "r1-xuat-khau-tu-ban",
+      "round": 1,
+      "type": "MULTIPLE_CHOICE",
+      "prompt": "Xuất khẩu tư bản – đặc điểm của CNTB độc quyền – được thực hiện dưới hai hình thức chủ yếu nào?",
+      "timeLimitSec": 20,
+      "options": [
+        "Đầu tư trực tiếp và đầu tư gián tiếp",
+        "Xuất khẩu hàng hoá và xuất khẩu dịch vụ",
+        "Cácten và xanhđica",
+        "Thương mại song phương và thương mại đa phương"
+      ],
+      "answerIndex": 0,
+      "explanation": "Xuất khẩu tư bản là xuất khẩu giá trị ra nước ngoài nhằm chiếm đoạt giá trị thặng dư và các nguồn lợi nhuận khác ở nước nhập khẩu tư bản, dưới hai hình thức: đầu tư trực tiếp (xây dựng, mua lại xí nghiệp để trực tiếp kinh doanh) và đầu tư gián tiếp (cho vay để thu lợi tức)."
+    },
+    {
+      "id": "r1-tu-ban-tai-chinh",
+      "round": 1,
+      "type": "FILL_BLANK",
+      "prompt": "Tư bản tài chính là kết quả của sự hợp nhất giữa tư bản độc quyền ngân hàng với tư bản độc quyền ___.",
+      "timeLimitSec": 30,
+      "blanks": [
+        [
+          "công nghiệp",
+          "cong nghiep",
+          "công nghiệp độc quyền"
+        ]
+      ],
+      "explanation": "Sự xâm nhập, dung hợp giữa tư bản độc quyền ngân hàng và tư bản độc quyền công nghiệp tạo thành tư bản tài chính, chi phối bởi một nhóm đầu sỏ tài chính."
+    },
+    {
+      "id": "r1-canh-tranh",
+      "round": 1,
+      "type": "TRUE_FALSE",
+      "prompt": "Độc quyền ra đời từ cạnh tranh tự do nhưng không thủ tiêu cạnh tranh, mà làm cho cạnh tranh trở nên đa dạng và gay gắt hơn.",
+      "timeLimitSec": 15,
+      "answer": true,
+      "explanation": "Đúng. Dưới CNTB độc quyền tồn tại cạnh tranh giữa độc quyền với xí nghiệp ngoài độc quyền, giữa các tổ chức độc quyền với nhau và ngay trong nội bộ tổ chức độc quyền."
+    },
+    {
+      "id": "r1-tot-cung",
+      "round": 1,
+      "type": "WORD_GUESS",
+      "prompt": "Tác phẩm của Lênin (1916): “Chủ nghĩa đế quốc, giai đoạn ___ của chủ nghĩa tư bản”. Đoán từ còn thiếu!",
+      "timeLimitSec": 60,
+      "word": "TỘT CÙNG",
+      "hint": "Hai từ, nghĩa là cao nhất, cuối cùng",
+      "explanation": "“Chủ nghĩa đế quốc, giai đoạn tột cùng của chủ nghĩa tư bản” (1916) là tác phẩm trong đó Lênin phân tích năm đặc điểm kinh tế của CNTB độc quyền."
+    },
+    {
+      "id": "r2-standard-oil",
+      "round": 2,
+      "type": "MULTIPLE_CHOICE",
+      "prompt": "Năm 1870, John D. Rockefeller cùng các cộng sự thành lập công ty dầu mỏ nào tại Ohio (Mỹ)?",
+      "timeLimitSec": 20,
+      "options": [
+        "Royal Dutch Shell",
+        "Standard Oil",
+        "British Petroleum",
+        "Gulf Oil"
+      ],
+      "answerIndex": 1,
+      "explanation": "Standard Oil được thành lập năm 1870 ở Ohio; chỉ khoảng một thập kỷ sau đã kiểm soát phần lớn ngành lọc dầu nước Mỹ."
+    },
+    {
+      "id": "r2-thi-phan",
+      "round": 2,
+      "type": "MULTIPLE_CHOICE",
+      "prompt": "Vào khoảng năm 1880, Standard Oil kiểm soát xấp xỉ bao nhiêu phần trăm năng lực lọc dầu của nước Mỹ?",
+      "timeLimitSec": 20,
+      "options": [
+        "Khoảng 30%",
+        "Khoảng 50%",
+        "Khoảng 70%",
+        "Khoảng 90%"
+      ],
+      "answerIndex": 3,
+      "explanation": "Nhờ thôn tính đối thủ, thoả thuận chiết khấu bí mật với đường sắt và kiểm soát đường ống, Standard Oil nắm khoảng 90% năng lực lọc dầu của Mỹ vào khoảng năm 1880."
+    },
+    {
+      "id": "r2-trust",
+      "round": 2,
+      "type": "FILL_BLANK",
+      "prompt": "Năm 1882, Rockefeller gom các công ty thành viên vào Standard Oil ___ – hình thức độc quyền thống nhất cả sản xuất lẫn lưu thông dưới một ban quản trị.",
+      "timeLimitSec": 30,
+      "blanks": [
+        [
+          "Trust",
+          "tờrớt",
+          "tơrớt",
+          "tờ rớt",
+          "tơ rớt",
+          "torot"
+        ]
+      ],
+      "explanation": "Standard Oil Trust (1882) là một trong những tờrớt điển hình nhất; chính từ “trust” đã sinh ra thuật ngữ “antitrust” (chống độc quyền)."
+    },
+    {
+      "id": "r2-sherman",
+      "round": 2,
+      "type": "TRUE_FALSE",
+      "prompt": "Đạo luật chống độc quyền Sherman của Hoa Kỳ được ban hành năm 1890.",
+      "timeLimitSec": 15,
+      "answer": true,
+      "explanation": "Đúng. Sherman Antitrust Act (1890) là đạo luật liên bang đầu tiên của Mỹ cấm các thoả thuận hạn chế thương mại và hành vi độc quyền hoá."
+    },
+    {
+      "id": "r2-dong-thoi-gian",
+      "round": 2,
+      "type": "ORDERING",
+      "prompt": "Sắp xếp các sự kiện của “đế chế dầu mỏ” theo đúng trình tự thời gian (sớm nhất lên trên)",
+      "timeLimitSec": 45,
+      "items": [
+        "Rockefeller thành lập Standard Oil",
+        "Thành lập Standard Oil Trust",
+        "Mỹ ban hành Đạo luật Sherman",
+        "Tòa án Tối cao Mỹ buộc chia tách Standard Oil",
+        "OPEC được thành lập tại Baghdad"
+      ],
+      "explanation": "1870 Standard Oil → 1882 Standard Oil Trust → 1890 Đạo luật Sherman → 1911 phán quyết chia tách thành 34 công ty → 1960 OPEC ra đời."
+    },
+    {
+      "id": "r2-chia-tach",
+      "round": 2,
+      "type": "WORD_GUESS",
+      "prompt": "Năm 1911, Tòa án Tối cao Mỹ ra phán quyết buộc Standard Oil phải làm gì? (thành 34 công ty)",
+      "timeLimitSec": 60,
+      "word": "CHIA TÁCH",
+      "hint": "Hai từ, ngược với “sáp nhập”",
+      "explanation": "Vụ Standard Oil Co. of New Jersey v. United States (1911): Standard Oil bị buộc chia tách thành 34 công ty độc lập, tiền thân của Exxon, Mobil, Chevron…"
+    },
+    {
+      "id": "r2-opec",
+      "round": 2,
+      "type": "MULTIPLE_CHOICE",
+      "prompt": "OPEC được thành lập năm 1960 bởi 5 nước sáng lập. Nước nào dưới đây KHÔNG thuộc nhóm sáng lập?",
+      "timeLimitSec": 20,
+      "options": [
+        "Venezuela",
+        "Iraq",
+        "Kuwait",
+        "Nigeria"
+      ],
+      "answerIndex": 3,
+      "explanation": "Năm nước sáng lập OPEC tại Baghdad (9/1960): Iran, Iraq, Kuwait, Saudi Arabia và Venezuela. Nigeria gia nhập năm 1971."
+    },
+    {
+      "id": "r3-zuboff",
+      "round": 3,
+      "type": "MULTIPLE_CHOICE",
+      "prompt": "Khái niệm “chủ nghĩa tư bản giám sát” (surveillance capitalism) gắn liền với tác giả nào?",
+      "timeLimitSec": 20,
+      "options": [
+        "Thomas Piketty",
+        "Shoshana Zuboff",
+        "Joseph Stiglitz",
+        "Naomi Klein"
+      ],
+      "answerIndex": 1,
+      "explanation": "Shoshana Zuboff (The Age of Surveillance Capitalism, 2019): các nền tảng chiếm đoạt trải nghiệm của con người làm nguyên liệu thô miễn phí, biến thành dữ liệu hành vi để dự đoán và bán cho thị trường quảng cáo."
+    },
+    {
+      "id": "r3-du-lieu",
+      "round": 3,
+      "type": "FILL_BLANK",
+      "prompt": "Trong nền kinh tế số, ___ thường được ví là “dầu mỏ mới” – nguồn nguyên liệu để các nền tảng thu lợi nhuận độc quyền.",
+      "timeLimitSec": 25,
+      "blanks": [
+        [
+          "dữ liệu",
+          "du lieu",
+          "data",
+          "dữ liệu cá nhân"
+        ]
+      ],
+      "explanation": "Năm 2017, tạp chí The Economist viết: tài nguyên giá trị nhất thế giới không còn là dầu mỏ mà là dữ liệu. Ai nắm dữ liệu – như ai từng nắm đường ống dầu – sẽ nắm quyền chi phối thị trường."
+    },
+    {
+      "id": "r3-big-tech",
+      "round": 3,
+      "type": "MATCHING",
+      "prompt": "Nối mỗi tập đoàn Big Tech với lĩnh vực mà nó chiếm vị thế thống trị",
+      "timeLimitSec": 40,
+      "pairs": [
+        {
+          "left": "Google (Alphabet)",
+          "right": "Tìm kiếm và quảng cáo trực tuyến"
+        },
+        {
+          "left": "Meta",
+          "right": "Mạng xã hội: Facebook, Instagram, WhatsApp"
+        },
+        {
+          "left": "Amazon",
+          "right": "Thương mại điện tử và điện toán đám mây (AWS)"
+        },
+        {
+          "left": "Apple",
+          "right": "Hệ điều hành iOS và kho ứng dụng App Store"
+        }
+      ],
+      "explanation": "Mỗi tập đoàn kiểm soát một “cửa ngõ” (gatekeeper) của nền kinh tế số – tương tự cách Standard Oil kiểm soát nhà máy lọc dầu và đường ống."
+    },
+    {
+      "id": "r3-google-2024",
+      "round": 3,
+      "type": "TRUE_FALSE",
+      "prompt": "Năm 2020, Bộ Tư pháp Mỹ khởi kiện Google; đến năm 2024, một tòa án liên bang kết luận Google đã duy trì độc quyền bất hợp pháp trên thị trường tìm kiếm.",
+      "timeLimitSec": 20,
+      "answer": true,
+      "explanation": "Đúng. Tháng 8/2024, thẩm phán Amit Mehta kết luận “Google là một nhà độc quyền” – vụ án chống độc quyền lớn nhất ở Mỹ kể từ vụ Microsoft (2001), dựa trên chính nền tảng Đạo luật Sherman 1890."
+    },
+    {
+      "id": "r3-nen-tang",
+      "round": 3,
+      "type": "WORD_GUESS",
+      "prompt": "Big Tech làm trung gian kết nối người dùng – nhà quảng cáo – người bán, rồi thu “địa tô” từ mọi giao dịch. Đó là mô hình kinh tế gì?",
+      "timeLimitSec": 60,
+      "word": "NỀN TẢNG",
+      "hint": "Tiếng Anh: platform",
+      "explanation": "Kinh tế nền tảng hưởng lợi từ hiệu ứng mạng lưới: càng nhiều người dùng càng thu hút thêm người dùng, dẫn tới xu hướng “kẻ thắng lấy tất cả” và độc quyền dữ liệu."
+    },
+    {
+      "id": "r4-mau-thuan",
+      "round": 4,
+      "type": "MULTIPLE_CHOICE",
+      "prompt": "Mâu thuẫn cơ bản của chủ nghĩa tư bản là mâu thuẫn giữa…",
+      "timeLimitSec": 25,
+      "options": [
+        "Thành thị và nông thôn",
+        "Tính chất xã hội hoá ngày càng cao của lực lượng sản xuất với chế độ chiếm hữu tư nhân TBCN về tư liệu sản xuất",
+        "Lao động trí óc và lao động chân tay",
+        "Các nước phát triển và các nước đang phát triển"
+      ],
+      "answerIndex": 1,
+      "explanation": "Độc quyền dữ liệu đẩy mâu thuẫn này lên cao: dữ liệu do hàng tỷ người cùng tạo ra (xã hội hoá rất cao) nhưng bị một nhóm nhỏ tập đoàn chiếm hữu tư nhân."
+    },
+    {
+      "id": "r4-cntb-dqnn",
+      "round": 4,
+      "type": "TRUE_FALSE",
+      "prompt": "Chủ nghĩa tư bản độc quyền nhà nước là sự kết hợp sức mạnh của các tổ chức độc quyền tư nhân với sức mạnh của nhà nước tư sản thành một thiết chế thống nhất.",
+      "timeLimitSec": 20,
+      "answer": true,
+      "explanation": "Đúng. CNTB độc quyền nhà nước kết hợp sức mạnh của độc quyền tư nhân với nhà nước tư sản nhằm phục vụ lợi ích của các tổ chức độc quyền và cứu nguy cho CNTB."
+    },
+    {
+      "id": "r4-giai-doan",
+      "round": 4,
+      "type": "ORDERING",
+      "prompt": "Sắp xếp các giai đoạn phát triển của chủ nghĩa tư bản theo trình tự lịch sử (sớm nhất lên trên)",
+      "timeLimitSec": 40,
+      "items": [
+        "Tích luỹ nguyên thuỷ tư bản",
+        "CNTB tự do cạnh tranh",
+        "CNTB độc quyền",
+        "CNTB độc quyền nhà nước"
+      ],
+      "explanation": "Từ tích luỹ nguyên thuỷ → tự do cạnh tranh → độc quyền (cuối thế kỷ XIX – đầu XX) → độc quyền nhà nước. Mỗi bước là sự xã hội hoá sản xuất cao hơn trong vỏ bọc chiếm hữu tư nhân."
+    },
+    {
+      "id": "r4-loi-nhuan",
+      "round": 4,
+      "type": "FILL_BLANK",
+      "prompt": "Các tổ chức độc quyền thu lợi nhuận độc quyền cao nhờ áp đặt giá cả độc quyền: giá bán ___ và giá mua ___.",
+      "timeLimitSec": 30,
+      "blanks": [
+        [
+          "cao"
+        ],
+        [
+          "thấp",
+          "thap"
+        ]
+      ],
+      "explanation": "Giá cả độc quyền = giá bán cao, giá mua thấp. Tuy vậy, xét toàn xã hội, tổng giá cả vẫn bằng tổng giá trị – lợi nhuận độc quyền thực chất là phần giá trị thặng dư bị phân phối lại."
+    },
+    {
+      "id": "r4-xa-hoi",
+      "round": 4,
+      "type": "WORD_GUESS",
+      "prompt": "Theo quan điểm Mác – Lênin, sự xã hội hoá sản xuất ngày càng cao dưới CNTB đang chuẩn bị tiền đề vật chất cho sự ra đời của chủ nghĩa…?",
+      "timeLimitSec": 50,
+      "word": "XÃ HỘI",
+      "hint": "Hai từ",
+      "explanation": "Lênin gọi CNTB độc quyền nhà nước là “sự chuẩn bị vật chất đầy đủ nhất” cho chủ nghĩa xã hội – giới hạn lịch sử của CNTB nằm ngay trong mâu thuẫn cơ bản của nó."
+    }
+  ]
+}

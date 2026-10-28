@@ -1,0 +1,309 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-blood-950 font-sans text-[#f6ead0] antialiased;
+  background-image:
+    radial-gradient(ellipse at top, rgba(147, 19, 29, 0.45), transparent 60%),
+    radial-gradient(ellipse at bottom, rgba(7, 6, 6, 0.9), transparent 70%);
+  background-attachment: fixed;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-lg font-extrabold uppercase tracking-wide transition active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-gold {
+    @apply btn bg-gold-500 text-coal-950 shadow-[0_4px_0_#8a5f0c] hover:bg-gold-400;
+  }
+  .btn-red {
+    @apply btn bg-blood-500 text-white shadow-[0_4px_0_#4a0a0f] hover:bg-blood-400;
+  }
+  .btn-ghost {
+    @apply btn border-2 border-gold-500/60 bg-transparent text-gold-300 hover:bg-gold-500/10;
+  }
+  .card {
+    @apply rounded-2xl border border-gold-600/30 bg-coal-900/80 shadow-xl backdrop-blur;
+  }
+  .input {
+    @apply w-full rounded-xl border-2 border-gold-600/50 bg-coal-950/80 px-4 py-3 text-xl font-bold text-gold-300 placeholder:text-coal-600 focus:border-gold-400 focus:outline-none;
+  }
+  .title-display {
+    @apply font-display uppercase tracking-wide text-gold-400 drop-shadow-[0_3px_0_#4a0a0f];
+  }
+}
+
+/* Vẽ từng nét treo cổ */
+.draw-part {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 0.7s ease-out forwards;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* Người bị treo đung đưa */
+.sway {
+  animation: sway 2.4s ease-in-out infinite;
+}
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+}
+
+/* Dữ liệu chạy trên dây cáp, dầu nhỏ giọt, đèn nhấp nháy */
+.data-flow {
+  animation: data-flow 1.2s linear infinite;
+}
+@keyframes data-flow {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+.drip {
+  animation: drip 1.8s ease-in infinite;
+}
+@keyframes drip {
+  0% {
+    transform: translateY(-14px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.2;
+  }
+}
+.blink {
+  animation: blink 1s steps(2) infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Rung màn hình khi bị +1 nét */
+.shake {
+  animation: shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(4px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-8px, 2px, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(8px, -2px, 0);
+  }
+}
+.flash-red {
+  animation: flash-red 0.6s ease-out;
+}
+@keyframes flash-red {
+  from {
+    box-shadow: inset 0 0 0 9999px rgba(220, 58, 58, 0.35);
+  }
+}
+
+/* Màn tình trạng sau khi công bố đáp án */
+.verdict-shake {
+  animation: shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.verdict-drop {
+  animation: verdict-drop 0.9s cubic-bezier(0.5, 0, 0.3, 1.6) both;
+}
+@keyframes verdict-drop {
+  0% {
+    transform: translateY(-36px);
+  }
+  35% {
+    transform: translateY(14px);
+  }
+  55% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.verdict-safe {
+  border-radius: 9999px;
+  animation: verdict-safe 1.6s ease-in-out both;
+}
+@keyframes verdict-safe {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0 rgba(52, 211, 153, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 24px rgba(52, 211, 153, 0.8));
+  }
+}
+.verdict-bg-red {
+  background: radial-gradient(circle at center, rgba(147, 19, 29, 0.85), rgba(7, 6, 6, 0.96) 70%);
+  animation: verdict-red 1.2s ease-in-out 3;
+}
+@keyframes verdict-red {
+  50% {
+    box-shadow: inset 0 0 120px 40px rgba(220, 58, 58, 0.55);
+  }
+}
+.stamp-slam {
+  transform: translate(-50%, -50%) rotate(-12deg);
+  animation: stamp-slam 0.45s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+}
+@keyframes stamp-slam {
+  from {
+    transform: translate(-50%, -50%) rotate(-25deg) scale(3);
+    opacity: 0;
+  }
+}
+
+/* Gói cứu trợ: dây đứt, nhân vật đứng dậy, băng dán */
+.rope-fall {
+  animation: rope-fall 1.1s ease-in forwards;
+}
+@keyframes rope-fall {
+  0%,
+  25% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: translate(10px, 190px) rotate(80deg);
+    opacity: 0;
+  }
+}
+.stand-up {
+  transform-origin: 142px 22px;
+  animation: stand-up 1.4s cubic-bezier(0.3, 1.4, 0.5, 1) both;
+}
+@keyframes stand-up {
+  0%,
+  20% {
+    transform: translateY(0) rotate(5deg);
+  }
+  60% {
+    transform: translateY(30px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(24px);
+  }
+}
+.bandage-pop {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pop-in 0.5s cubic-bezier(0.18, 1.4, 0.4, 1) 1.3s both;
+}
+
+.pop-in {
+  animation: pop-in 0.45s cubic-bezier(0.18, 1.4, 0.4, 1) both;
+}
+@keyframes pop-in {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+}
+.slide-up {
+  animation: slide-up 0.5s ease-out both;
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+}
+
+/* Bục vinh danh */
+.podium-rise {
+  transform-origin: bottom;
+  animation: podium-rise 1s cubic-bezier(0.2, 0.9, 0.3, 1.1) both;
+}
+@keyframes podium-rise {
+  from {
+    transform: scaleY(0);
+  }
+}
+.podium-drop {
+  animation: podium-drop 0.7s cubic-bezier(0.2, 1.3, 0.4, 1) both;
+}
+@keyframes podium-drop {
+  from {
+    transform: translateY(-60px) scale(0.7);
+    opacity: 0;
+  }
+}
+
+.confetti {
+  position: absolute;
+  top: -20px;
+  width: 10px;
+  height: 16px;
+  animation: confetti-fall linear forwards;
+}
+@keyframes confetti-fall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+  }
+}
+
+.round-zoom {
+  animation: round-zoom 0.9s cubic-bezier(0.2, 1.2, 0.4, 1) both;
+}
+@keyframes round-zoom {
+  from {
+    transform: scale(2.4);
+    opacity: 0;
+    letter-spacing: 0.4em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
