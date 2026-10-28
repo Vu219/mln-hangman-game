@@ -72,7 +72,7 @@ function PlayRoom({ pin, uid }: { pin: string; uid: string }) {
   const player = me.value;
   const status = m?.status;
   const slot = m ? slotKey(m) : null;
-  const question = questionDb.value && questionDb.value.slot === slot ? questionDb.value : null;
+  const question: PublicQuestion | null = questionDb.value && questionDb.value.slot === slot ? questionDb.value : null;
   const ranked = useMemo(() => rankPlayers(playersDb.value), [playersDb.value]);
   const rank = ranked.findIndex((p) => p.uid === uid) + 1;
   const theme = themeForRound(m?.round ?? 1, m?.roundInfo);

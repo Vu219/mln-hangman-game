@@ -67,7 +67,7 @@ export default function HostRoom() {
   const m = meta.value;
   const status = m?.status;
   const players = useMemo(() => rankPlayers(playersDb.value), [playersDb.value]);
-  const question = questionDb.value && questionDb.value.slot === slot ? questionDb.value : null;
+  const question: PublicQuestion | null = questionDb.value && questionDb.value.slot === slot ? questionDb.value : null;
   const stats = statsDb.value;
   const theme = themeForRound(m?.round ?? 1, m?.roundInfo);
   const alive = players.filter((p) => p.status === "ALIVE").length;

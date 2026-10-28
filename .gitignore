@@ -1,12 +1,13 @@
 node_modules/
-lib/
 dist/
 *.log
+*.tsbuildinfo
 .firebase/
 .env
 .env.local
 .env.*.local
 .vercel
 
-# Danh sách UID host thật – chỉ commit file mẫu admins.example.json
-firebase/admins.json
+# Danh sách UID host thật – chỉ commit file mẫu firebase/admins.example.json.
+# Neo về thư mục gốc để không chặn nhầm file nào khác trùng tên.
+/firebase/admins.json
